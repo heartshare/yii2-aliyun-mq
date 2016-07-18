@@ -1,20 +1,20 @@
 {
-	"name": "xiaozhuful/single-login",
-	"type": "library",
-	"description": "�����¼",
-	"keywords": ["single-login"],
-	"homepage": "https://github.com/xiaozhuful/single-login",
-	"license": "MIT",
-	"require": {
-	"php": ">=5.4.0"
-	},
-	"authors": [
-	  {
-		  "name": "xiaozhuful",
-		  "email": "505557473@qq.com"
-	  }
-	],
-		"autoload": {
-		"psr-4": {"xiaozhuful\\singlelogin\\": ""}
-	}
+  "name": "xiaozhuful/aliyun-oss",
+  "type": "library",
+  "description": "阿里云HTTP收发消息官方SDK的Composer封装，支持任何PHP项目",
+  "keywords": ["aliyun-mq", "aliyun", "mq"],
+  "homepage": "https://github.com/xiaozhuful/aliyun-mq",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "authors": [
+      {
+          "name": "xiaozhuful",
+          "email": "505557473@qq.com"
+      }
+  ],
+  "autoload": {
+    "psr-4": {"xiaozhuful\\aliyunmq\\": ""}
+  }
 }
