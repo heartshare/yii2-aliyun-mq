@@ -1,0 +1,20 @@
+{
+	"name": "xiaozhuful/single-login",
+	"type": "library",
+	"description": "µ¥µãµÇÂ¼",
+	"keywords": ["single-login"],
+	"homepage": "https://github.com/xiaozhuful/single-login",
+	"license": "MIT",
+	"require": {
+	"php": ">=5.4.0"
+	},
+	"authors": [
+	  {
+		  "name": "xiaozhuful",
+		  "email": "505557473@qq.com"
+	  }
+	],
+		"autoload": {
+		"psr-4": {"xiaozhuful\\singlelogin\\": ""}
+	}
+}
