@@ -1,5 +1,5 @@
 {
-  "name": "xiaozhuful/aliyun-oss",
+  "name": "xiaozhuful/aliyun-mq",
   "type": "library",
   "description": "阿里云HTTP收发消息官方SDK的Composer封装，支持任何PHP项目",
   "keywords": ["aliyun-mq", "aliyun", "mq"],
