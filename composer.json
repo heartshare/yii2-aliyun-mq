@@ -1,6 +1,6 @@
 {
 	"name": "xiaozhuful/yii2-aliyun-mq",
-    "type": "library",
+    	"type": "library",
 	"description": "阿里云HTTP收发消息官方SDK的Composer封装，支持任何PHP项目",
 	"keywords": ["yii2-aliyun-mq", "aliyun", "mq"],
 	"homepage": "https://github.com/xiaozhuful/yii2-aliyun-mq",
