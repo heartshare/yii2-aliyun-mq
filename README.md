@@ -1,5 +1,4 @@
 # yii2-aliyun-mq
-[![Latest Stable Version](https://poser.pugx.org/daixianceng/yii2-aliyun-mq/v/stable)](https://packagist.org/packages/daixianceng/yii2-smser) [![Total Downloads](https://poser.pugx.org/daixianceng/yii2-aliyun-mq/downloads)](https://packagist.org/packages/daixianceng/yii2-smser) [![Latest Unstable Version](https://poser.pugx.org/daixianceng/yii2-aliyun-mq/v/unstable)](https://packagist.org/packages/daixianceng/yii2-smser) [![License](https://poser.pugx.org/daixianceng/yii2-aliyun-mq/license)](https://packagist.org/packages/daixianceng/yii2-smser)
 
 Yii2 Aliyun Mq （阿里云消息队列扩展）
 
