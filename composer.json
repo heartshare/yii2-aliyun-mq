@@ -16,7 +16,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-            "xiaozhuful\\aliyunmq\\": "src/"
-        }
+            		"xiaozhuful\\aliyunmq\\": "src/"
+        	}
 	}
 }
