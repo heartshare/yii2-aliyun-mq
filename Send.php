@@ -8,7 +8,7 @@ namespace xiazhuful\aliyunmq;
  * @author Zhou Yangzhi <505557473@qq.com>
  * @since v1.0
  */
-class Send extends Config
+class Send extends Aliyunmq
 {
     /**
      * @var string http头部信息（发送）
@@ -36,22 +36,14 @@ class Send extends Config
      */
     public function __construct()
     {
-        $this->_header = $this->getHeader();
-        $this->_url = $this->getUrl();
-    }
-    
-    /**
-     * 发送消息
-     */
-    public function send($content)
-    {
-        Curl::post($this->_header, $this->_url, $content);
+        $this->_header = $this->_getHeader();
+        $this->_url = $this->_getUrl();
     }
 
     /**
      * http头部信息
      */
-    public function getHeader($content)
+    private function _getHeader($content)
     {
         // 构造签名标记
         $newline = "\n"; // 计算时间戳
@@ -82,11 +74,19 @@ class Send extends Config
     /**
      * http请求url
      */
-    public function gettUrl()
+    private function _getUrl()
     {
         $date = time()*1000; // 构造时间戳
         $requestUrl = $this->url . "/message/?topic=" . $this->topic . "&time=" . $date . "&tag=http&key=http"; // post请求url
 
         return $requestUrl;
+    }
+    
+    /**
+     * 发送消息
+     */
+    public function send($content)
+    {
+        Curl::post($this->_header, $this->_url, $content);
     }
 }

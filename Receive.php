@@ -8,7 +8,7 @@ namespace xiazhuful\aliyunmq;
  * @author Zhou Yangzhi <505557473@qq.com>
  * @since v1.0
  */
-class Receive extends Config
+class Receive extends Aliyunmq
 {
     /**
      * @var string http头部信息（发送）
@@ -36,22 +36,14 @@ class Receive extends Config
      */
     public function __construct()
     {
-        $this->_header = $this->getHeader();
-        $this->_url = $this->getUrl();
-    }
-	
-	/**
-     * 接收消息
-     */
-    public function receive()
-    {
-        Curl::get($this->_header, $this->_url);
+        $this->_header = $this->_getHeader();
+        $this->_url = $this->_getUrl();
     }
 
     /**
      * http头部信息（接收）
      */
-    public function getHeader()
+    private function _getHeader()
     {
         // 构造签名标记
         $newline = "\n";
@@ -82,11 +74,19 @@ class Receive extends Config
     /**
      * http请求url（接收）
      */
-    public function getUrl()
+    private function _getUrl()
     {
         $date = time()*1000; // 构造时间戳
         $requestUrl = $this->url . "/message/?topic=" . $this->topic . "&time=" . $date . "&num=32"; // 构造http请求url
 
         return $requestUrl;
+    }
+	
+	/**
+     * 接收消息
+     */
+    public function receive()
+    {
+        Curl::get($this->_header, $this->_url);
     }
 }
