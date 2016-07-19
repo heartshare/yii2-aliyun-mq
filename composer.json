@@ -4,7 +4,8 @@
 	"description": "阿里云HTTP收发消息官方SDK的Composer封装，支持任何PHP项目",
 	"keywords": ["yii2-aliyun-mq", "aliyun", "mq"],
 	"homepage": "https://github.com/xiaozhuful/yii2-aliyun-mq",
-	"license": "MIT",
+	"type": "yii2-extension",
+    	"license": "BSD 3-Clause",
 	"require": {
 		"php": ">=5.4.0"
 	},
@@ -14,6 +15,9 @@
 			"email": "505557473@qq.com"
 		}
 	],
+	"require": {
+        	"yiisoft/yii2": "*"
+    	},
 	"autoload": {
 		"psr-4": {
             		"xiaozhuful\\aliyunmq\\": "src/"
