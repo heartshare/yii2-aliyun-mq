@@ -1,20 +1,19 @@
 {
-	"name": "xiaozhuful/yii2-aliyun-mq",
-	"type": "library",
-	"description": "阿里云HTTP收发消息官方SDK的Composer封装，支持任何PHP项目",
-	"keywords": ["yii2-aliyun-mq", "aliyun", "mq"],
-	"homepage": "https://github.com/xiaozhuful/yii2-aliyun-mq",
-	"license": "MIT",
-	"require": {
-	"php": ">=5.4.0"
-	},
-	"authors": [
-	  {
-		  "name": "xiaozhuful",
-		  "email": "505557473@qq.com"
-	  }
-	],
-		"autoload": {
-		"psr-4": {"xiaozhuful\\aliyunmq\\": ""}
-	}
+    "name": "xiaozhuful/yii-aliyun-mq",
+    "description": "阿里云HTTP收发消息官方SDK的Composer封装，支持任何PHP项目",
+    "type": "yii2-extension",
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+            "name": "xiaozhuful",
+            "email": "505557473@qq.com"
+        }
+    ],
+    "minimum-stability": "master",
+    "require": {},
+	"autoload": {
+        "psr-4": {
+            "xiaozhuful\\aliyunmq\\": "src/"
+        }
+    }
 }
